@@ -30,19 +30,3 @@ for nombre in range(1, 101):
     print(gauche or droite)
     # version en une ligne
     # print("fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre))
-
-
-def se_presenter(prenom):
-    return f"Bonjour, je suis {prenom}"
-
-
-############################
-# utilisation de la fonction
-presentation = se_presenter("Matthieu")
-print(presentation)
-
-presentation = se_presenter("Joël")
-print(presentation)
-
-presentation = se_presenter(3)
-print(presentation)
