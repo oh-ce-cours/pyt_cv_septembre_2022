@@ -8,7 +8,7 @@ def cat():
 
 def tac():
     f = open("./fizzbuzz.py", encoding="utf8")
-    for line in reversed(f.readlines()):
+    for line in f.readlines()[::-1]:
         line = line.rstrip()
         print(line)
     f.close()
