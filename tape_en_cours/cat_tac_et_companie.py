@@ -46,4 +46,4 @@ def cat_paresseux():
     f.close()
 
 
-autre()
+cat_paresseux()
