@@ -32,7 +32,7 @@ for nombre in range(1, 101):
     # print("fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre))
 
 
-def se_presenter(prenom: str):
+def se_presenter(prenom):
     return f"Bonjour, je suis {prenom}"
 
 
