@@ -69,7 +69,7 @@ def head_paresseux_1():
 
 def head_paresseux():
     f = open("./fizzbuzz.py", encoding="utf8")
-    for line in f:
+    for line in zip(f, range(10)):
         line = line.rstrip()
         print(line)
     f.close()
