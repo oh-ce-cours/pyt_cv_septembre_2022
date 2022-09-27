@@ -28,3 +28,4 @@ for nombre in range(1, 101):
     gauche = gauche_plus + droite_plus
     droite = str(nombre)
     print(gauche or droite)
+    # gauche_plus + droite_plus or str(nombre)
