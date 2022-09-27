@@ -14,4 +14,12 @@ def tac():
     f.close()
 
 
+def head():
+    f = open("./fizzbuzz.py", encoding="utf8")
+    for line in f.readlines()[::-1]:
+        line = line.rstrip()
+        print(line)
+    f.close()
+
+
 tac()
