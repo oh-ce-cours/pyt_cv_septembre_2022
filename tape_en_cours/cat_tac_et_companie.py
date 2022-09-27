@@ -49,11 +49,9 @@ def wc_paresseux():
 
 def cat_paresseux():
     f = open("./fizzbuzz.py", encoding="utf8")
-    count = 0
     for line in f:
-        # line = line.rstrip()
-        # print(line)
-        count += 1
+        line = line.rstrip()
+        print(line)
     f.close()
     print(f"Il y a {count} lignes dans le fichier")
 
