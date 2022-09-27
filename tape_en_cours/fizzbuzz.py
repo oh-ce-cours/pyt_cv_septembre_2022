@@ -36,7 +36,7 @@ for nombre in range(1, 101):
     match (nombre % 3, nombre % 5):
         case (0, 0):
             print("fizzbuzz")
-        case (0, _):
+        case (0, reste_de_la_division_par_5):
             print("fizz")
         case (_, 0):
             print(f"buzz")
