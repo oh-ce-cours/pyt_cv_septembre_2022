@@ -14,7 +14,7 @@ def tac():
     f.close()
 
 
-def head():
+def head(nombre_de_lignes_a_afficher):
     f = open("./fizzbuzz.py", encoding="utf8")
     for line in f.readlines()[:5]:
         line = line.rstrip()
