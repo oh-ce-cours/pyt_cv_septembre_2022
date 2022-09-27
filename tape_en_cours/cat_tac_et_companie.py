@@ -40,10 +40,13 @@ def autre():
 
 def cat_paresseux():
     f = open("./fizzbuzz.py", encoding="utf8")
+    count = 0
     for line in f:
-        line = line.rstrip()
-        print(line)
+        # line = line.rstrip()
+        # print(line)
+        count += 1
     f.close()
+    print(f"Il y a {count} lignes dans le fichier")
 
 
 cat_paresseux()
