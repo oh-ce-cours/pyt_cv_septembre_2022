@@ -19,5 +19,4 @@ for nombre in range(1, 101):
         resultat = resultat + "buzz"
     if resultat:
         resultat = str(nombre)
-
     print(resultat)
