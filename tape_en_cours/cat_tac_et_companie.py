@@ -6,4 +6,12 @@ def cat():
     f.close()
 
 
+def tac():
+    f = open("./fizzbuzz.py", encoding="utf8")
+    for line in reversed(f.readlines()):
+        line = line.rstrip()
+        print(line)
+    f.close()
+
+
 cat()
