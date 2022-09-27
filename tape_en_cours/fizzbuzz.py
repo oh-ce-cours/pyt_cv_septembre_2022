@@ -20,3 +20,5 @@ for nombre in range(1, 101):
 
     if not nombre % 5 == 0 and not nombre % 3 == 0:
         resultat = str(nombre)
+
+    print(resultat)
