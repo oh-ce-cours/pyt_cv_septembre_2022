@@ -53,7 +53,6 @@ def cat_paresseux():
         line = line.rstrip()
         print(line)
     f.close()
-    print(f"Il y a {count} lignes dans le fichier")
 
 
 cat_paresseux()
