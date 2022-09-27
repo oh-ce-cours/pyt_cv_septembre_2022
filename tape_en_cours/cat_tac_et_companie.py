@@ -30,4 +30,4 @@ def tail(nombre_de_lignes_a_afficher):
     f.close()
 
 
-tail(15)
+tail()
