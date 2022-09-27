@@ -41,7 +41,7 @@ def autre():
 def wc_paresseux():
     f = open("./fizzbuzz.py", encoding="utf8")
     count = 0
-    for line in f:
+    for _ in f:
         count += 1
     f.close()
     print(f"Il y a {count} lignes dans le fichier")
