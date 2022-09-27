@@ -30,4 +30,12 @@ def tail(nombre_de_lignes_a_afficher=5):
     f.close()
 
 
+def autre():
+    f = open("./fizzbuzz.py", encoding="utf8")
+    for line in f.readlines()[5:-10:3]:
+        line = line.rstrip()
+        print(line)
+    f.close()
+
+
 tail()
