@@ -24,7 +24,7 @@ def head(nombre_de_lignes_a_afficher):
 
 def tail(nombre_de_lignes_a_afficher):
     f = open("./fizzbuzz.py", encoding="utf8")
-    for line in f.readlines()[nombre_de_lignes_a_afficher * -1 :]:
+    for line in f.readlines()[-nombre_de_lignes_a_afficher:]:
         line = line.rstrip()
         print(line)
     f.close()
