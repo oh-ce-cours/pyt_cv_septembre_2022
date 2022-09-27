@@ -16,7 +16,15 @@ def tac():
 
 def head():
     f = open("./fizzbuzz.py", encoding="utf8")
-    for line in f.readlines()[::-1]:
+    for line in f.readlines()[:5]:
+        line = line.rstrip()
+        print(line)
+    f.close()
+
+
+def tail():
+    f = open("./fizzbuzz.py", encoding="utf8")
+    for line in f.readlines()[-5:]:
         line = line.rstrip()
         print(line)
     f.close()
