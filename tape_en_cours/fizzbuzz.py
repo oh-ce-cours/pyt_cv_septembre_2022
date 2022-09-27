@@ -18,7 +18,7 @@ for nombre in range(1, 101):
     if nombre % 5 == 0:
         resultat = resultat + "buzz"
 
-    if not resultat:
+    if resultat:
         resultat = str(nombre)
 
     print(resultat)
