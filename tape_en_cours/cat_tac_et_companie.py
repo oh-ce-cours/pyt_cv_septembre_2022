@@ -14,4 +14,4 @@ def tac():
     f.close()
 
 
-cat()
+tac()
