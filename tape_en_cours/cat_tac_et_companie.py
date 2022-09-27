@@ -55,7 +55,7 @@ def cat_paresseux():
     f.close()
 
 
-def head_paresseux():
+def head_paresseux_1():
     f = open("./fizzbuzz.py", encoding="utf8")
     line_counter = 1
     for line in f:
@@ -64,15 +64,14 @@ def head_paresseux():
         line_counter += 1
         if line_counter > 10:
             break
+    f.close()
 
-    line_counter = 1
+
+def head_paresseux():
+    f = open("./fizzbuzz.py", encoding="utf8")
     for line in f:
         line = line.rstrip()
         print(line)
-        line_counter += 1
-        if line_counter > 10:
-            break
-
     f.close()
 
 
