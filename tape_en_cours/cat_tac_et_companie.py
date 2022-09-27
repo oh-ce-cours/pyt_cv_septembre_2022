@@ -58,14 +58,16 @@ def cat_paresseux():
 def head_paresseux():
     f = open("./fizzbuzz.py", encoding="utf8")
     line_counter = 1
-    for line in f.readlines():
+    lines = f.readlines()
+    for line in lines:
         line = line.rstrip()
         print(line)
         line_counter += 1
         if line_counter > 10:
             break
 
-    for line in f.readlines():
+    line_counter = 1
+    for line in lines:
         line = line.rstrip()
         print(line)
         line_counter += 1
