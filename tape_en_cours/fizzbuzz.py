@@ -24,6 +24,7 @@
 ## Solution 3 (sans les if)
 for nombre in range(1, 101):
     gauche_plus = "fizz" * (nombre % 3 == 0)
-    gauche = gauche_plus + "buzz" * (nombre % 5 == 0)
+    droite_plus = "buzz" * (nombre % 5 == 0)
+    gauche = gauche_plus + 
     droite = str(nombre)
     print(gauche or droite)
