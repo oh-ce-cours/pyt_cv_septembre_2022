@@ -4,3 +4,6 @@ def cat():
         line = line.rstrip()
         print(line)
     f.close()
+
+
+cat()
