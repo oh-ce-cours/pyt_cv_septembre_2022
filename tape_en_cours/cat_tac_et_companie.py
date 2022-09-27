@@ -38,4 +38,4 @@ def autre():
     f.close()
 
 
-tail()
+autre()
