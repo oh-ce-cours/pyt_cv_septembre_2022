@@ -15,5 +15,5 @@ for nombre in range(1, 101):
     # "fizzbuzz" = "fizz" + "buzz"
     if nombre % 3 == 0:
         resultat = resultat + "fizz"
-    if nombre % 3 == 0:
+    if nombre % 5 == 0:
         resultat = resultat + "buzz"
