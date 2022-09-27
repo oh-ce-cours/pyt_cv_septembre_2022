@@ -10,13 +10,18 @@
 #         print(nombre)
 
 ## Solution 2 (sans les elif)
+# for nombre in range(1, 101):
+#     resultat = ""
+#     # "fizzbuzz" = "fizz" + "buzz"
+#     if nombre % 3 == 0:
+#         resultat = resultat + "fizz"
+#     if nombre % 5 == 0:
+#         resultat = resultat + "buzz"
+#     if resultat:
+#         resultat = str(nombre)
+#     print(resultat)
+
+## Solution 3 (sans les if)
 for nombre in range(1, 101):
-    resultat = ""
-    # "fizzbuzz" = "fizz" + "buzz"
-    if nombre % 3 == 0:
-        resultat = resultat + "fizz"
-    if nombre % 5 == 0:
-        resultat = resultat + "buzz"
-    if resultat:
-        resultat = str(nombre)
-    print(resultat)
+    res = "fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0)
+    print(res)
