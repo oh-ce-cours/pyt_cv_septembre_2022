@@ -30,4 +30,4 @@ def tail():
     f.close()
 
 
-tac()
+head()
