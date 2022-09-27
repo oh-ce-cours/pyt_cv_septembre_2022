@@ -28,4 +28,5 @@ for nombre in range(1, 101):
     gauche = gauche_plus + droite_plus
     droite = str(nombre)
     print(gauche or droite)
-    # "fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre)
+    # version en une ligne
+    # print("fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre))
