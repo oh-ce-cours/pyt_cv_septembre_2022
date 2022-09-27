@@ -25,5 +25,5 @@
 for nombre in range(1, 101):
     res = "fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0)
     if not res:
-        res = str(i)
+        res = str(nombre)
     print(res)
