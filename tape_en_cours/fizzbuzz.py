@@ -19,4 +19,4 @@ for nombre in range(1, 101):
         resultat = resultat + "buzz"
 
     if not nombre % 5 == 0 and not nombre % 3 == 0:
-        resultat = str(nombre)
+        resultat = nombre
