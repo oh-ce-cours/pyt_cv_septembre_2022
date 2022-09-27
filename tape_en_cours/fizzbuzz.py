@@ -17,7 +17,6 @@ for nombre in range(1, 101):
         resultat = resultat + "fizz"
     if nombre % 5 == 0:
         resultat = resultat + "buzz"
-
     if resultat:
         resultat = str(nombre)
 
