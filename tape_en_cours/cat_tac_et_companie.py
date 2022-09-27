@@ -57,7 +57,7 @@ def cat_paresseux():
 
 def head_paresseux():
     f = open("./fizzbuzz.py", encoding="utf8")
-    line_counter = 0
+    line_counter = 1
     for line in f:
         line = line.rstrip()
         print(line)
