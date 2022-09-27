@@ -38,4 +38,12 @@ def autre():
     f.close()
 
 
+def cat_paresseux():
+    f = open("./fizzbuzz.py", encoding="utf8")
+    for line in f:
+        line = line.rstrip()
+        print(line)
+    f.close()
+
+
 autre()
