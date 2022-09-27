@@ -30,3 +30,15 @@ for nombre in range(1, 101):
     print(gauche or droite)
     # version en une ligne
     # print("fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre))
+
+
+for nombre in range(1, 101):
+    match (nombre % 3, nombre % 5):
+        case (0, 0):
+            print("fizzbuzz")
+        case (0, _):
+            print("fizz")
+        case (_, 0):
+            print(f"buzz")
+        case _, _:
+            print(nombre)
