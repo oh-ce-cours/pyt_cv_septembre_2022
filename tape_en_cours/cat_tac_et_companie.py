@@ -55,4 +55,12 @@ def cat_paresseux():
     f.close()
 
 
+def head_paresseux():
+    f = open("./fizzbuzz.py", encoding="utf8")
+    for line in f:
+        line = line.rstrip()
+        print(line)
+    f.close()
+
+
 cat_paresseux()
