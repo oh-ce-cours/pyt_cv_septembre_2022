@@ -32,13 +32,14 @@ for nombre in range(1, 101):
     # print("fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre))
 
 
-for nombre in range(1, 101):
-    match (nombre % 3, nombre % 5):
-        case (0, 0):
-            print("fizzbuzz")
-        case (0, reste_de_la_division_par_5):
-            print("fizz")
-        case (_, 0):
-            print(f"buzz")
-        case _, _:
-            print(nombre)
+## Solution 4 avec match / case (python >= 3.10)
+# for nombre in range(1, 101):
+#     match (nombre % 3, nombre % 5):
+#         case (0, 0):
+#             print("fizzbuzz")
+#         case (0, _):
+#             print("fizz")
+#         case (_, 0):
+#             print(f"buzz")
+#         case _, _:
+#             print(nombre)
