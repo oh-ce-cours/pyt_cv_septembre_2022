@@ -14,7 +14,7 @@ def csv_generator_2(data: typing.List[typing.Tuple[str, str]]):
         csv_writer = csv.writer(csv_file, delimiter=",", quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerows(data)
     for line in data:
-        print(line)
+        print(line[0])
 
 
 datas: typing.List[typing.Tuple[str, str]] = [("Matthieu, Falce", "ohcecours,python")]
