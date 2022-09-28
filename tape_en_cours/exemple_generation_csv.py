@@ -17,7 +17,7 @@ def csv_generator_2(data: typing.List[typing.Tuple[str, str]]):
         csv_writer.writerows(data)
 
 
-datas: typing.List[typing.Tuple[str, str]] = []
+datas: typing.List[typing.Tuple[str, str]] = [("Matthieu, Falce", "ohcecours,python")]
 r = requests.get("https://api.github.com/events")
 for event in r.json():
     datas.append((event["actor"]["display_login"], event["repo"]["name"]))
