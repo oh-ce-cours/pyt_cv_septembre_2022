@@ -1,11 +1,9 @@
 import random
-import time
 
 
 def jeu_plus_moins():
     while True:
         try:
-            time.sleep(10)
             a = int(input("Entrez un nombre entre 1 et 100 : "))
             break
         except ValueError:
