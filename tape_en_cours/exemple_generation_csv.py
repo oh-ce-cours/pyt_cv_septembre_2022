@@ -15,7 +15,7 @@ def csv_generator_2(data: typing.List[typing.Tuple[str, str]]):
             csv_file, delimiter=" ", quotechar="|", quoting=csv.QUOTE_MINIMAL
         )
         for line in data:
-            csv_file.write(",".join(line) + "\n")
+            csv_writer.writerow(line)
 
 
 datas: typing.List[typing.Tuple[str, str]] = []
