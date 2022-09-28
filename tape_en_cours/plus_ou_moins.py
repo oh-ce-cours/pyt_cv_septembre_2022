@@ -4,9 +4,9 @@ import random
 def jeu_plus_moins():
     while True:
         try:
-            a = int(input("Entrez un nombre entre 1 et 100 : "))
+            a = intt(input("Entrez un nombre entre 1 et 100 : "))
             break
-        except ValueError:
+        except:
             print("on a dit un nombre")
 
     nombre = random.randint(1, 100)
