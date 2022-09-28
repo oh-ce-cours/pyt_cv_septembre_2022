@@ -7,12 +7,10 @@ def ma_nouvelle_fonction():
 
 
 print("avant def autre nouvelle")
+print("avant appel de nouvelle")
+ma_nouvelle_fonction()
 
 
 def ma_nouvelle_fonction_autre():
     print("dans autre nouvelle")
     return 3
-
-
-print("avant appel de nouvelle")
-ma_nouvelle_fonction()
