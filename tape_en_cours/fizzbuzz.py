@@ -7,7 +7,7 @@
 #     elif nombre % 5 == 0:
 #         print("buzz")
 #     else:
-#         print(nombre)
+#         print(nombre) 
 
 ## Solution 2 (sans les elif)
 # for nombre in range(1, 101):
