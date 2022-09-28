@@ -1,16 +1,17 @@
-print("avant def nouvelle")
+print("avant def f1")
 
 
-def ma_nouvelle_fonction():
-    print("dans nouvelle")
-    return ma_nouvelle_fonction_autre()
+def fonction1():
+    print("dans f1")
+    return fonction2()
 
 
-print("avant def autre nouvelle")
-print("avant appel de nouvelle")
-ma_nouvelle_fonction()
+print("avant appel de f1")
+fonction1()
+
+print("avant def f2")
 
 
-def ma_nouvelle_fonction_autre():
-    print("dans autre nouvelle")
+def fonction2():
+    print("dans f2")
     return 3
