@@ -3,8 +3,8 @@ import random
 
 def jeu_plus_moins():
     while True:
+        a = intt(input("Entrez un nombre entre 1 et 100 : "))
         try:
-            a = intt(input("Entrez un nombre entre 1 et 100 : "))
             break
         except:
             print("on a dit un nombre")
