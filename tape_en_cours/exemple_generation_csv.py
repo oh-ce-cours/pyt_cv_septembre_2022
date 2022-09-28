@@ -9,13 +9,10 @@ def csv_generator_1(data: typing.List[typing.Tuple[str, str]]):
             csv_file.write(",".join(line) + "\n")
 
 
-def csv_generator_2(data):
+def csv_generator_2(data: typing.List[typing.Tuple[str, str]]):
     with open("api2.csv", "w", encoding="utf8") as csv_file:
         csv_writer = csv.writer(csv_file, delimiter=",", quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerows(data)
-    for line in data:
-
-        print(line[0])
 
 
 datas: typing.List[typing.Tuple[str, str]] = [("Matthieu, Falce", "ohcecours,python")]
