@@ -3,7 +3,7 @@ import requests
 
 
 def csv_generator_1(data: typing.List[typing.Tuple[str, str]]):
-    with open("api1.csv", "w", encoding="utf8") as csv_file:
+    with open("api1.csv", "a", encoding="utf8") as csv_file:
         # print(data)
         for line in data:
             csv_file.write(",".join(line) + "\n")
