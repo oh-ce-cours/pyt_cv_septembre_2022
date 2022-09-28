@@ -1,5 +1,6 @@
 import typing
 import requests
+import csv
 
 
 def csv_generator_1(data: typing.List[typing.Tuple[str, str]]):
