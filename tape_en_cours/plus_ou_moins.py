@@ -5,8 +5,8 @@ import time
 def jeu_plus_moins():
     while True:
         try:
-            a = int(input("Entrez un nombre entre 1 et 100 : "))
             time.sleep(10)
+            a = int(input("Entrez un nombre entre 1 et 100 : "))
             break
         except:
             print("on a dit un nombre")
