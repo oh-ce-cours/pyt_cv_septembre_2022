@@ -4,7 +4,7 @@ import random
 def jeu_plus_moins():
     while True:
         try:
-            a = intt(input("Entrez un nombre entre 1 et 100 : "))
+            a = int(input("Entrez un nombre entre 1 et 100 : "))
             break
         except:
             print("on a dit un nombre")
