@@ -6,7 +6,7 @@ def jeu_plus_moins():
         try:
             a = int(input("Entrez un nombre entre 1 et 100 : "))
             break
-        except:
+        except ValueError:
             print("on a dit un nombre")
 
     nombre = random.randint(1, 100)
