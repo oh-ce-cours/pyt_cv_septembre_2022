@@ -20,4 +20,4 @@ r = requests.get("https://api.github.com/events")
 for event in r.json():
     datas.append((event["actor"]["display_login"], event["repo"]["name"]))
 
-csv_generator_2([])
+csv_generator_2("")
