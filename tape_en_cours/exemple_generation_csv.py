@@ -1,8 +1,6 @@
 import typing
 import requests
 
-r = requests.get("https://api.github.com/events")
-
 
 def csv_generator_1(data: typing.List[typing.Tuple[str, str]]):
     with open("api1.csv", "w", encoding="utf8"):
@@ -12,6 +10,7 @@ def csv_generator_1(data: typing.List[typing.Tuple[str, str]]):
 
 
 datas: typing.List[typing.Tuple[str, str]] = []
+r = requests.get("https://api.github.com/events")
 for event in r.json():
     datas.append((event["actor"]["display_login"], event["repo"]["name"]))
 
