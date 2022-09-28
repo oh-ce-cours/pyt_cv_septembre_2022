@@ -1,7 +1,7 @@
 import random
 
 
-def jeu_plus_moins():
+def jeu_plus_moins()
     a = int(input("Entrez un nombre entre 1 et 100 : "))
     nombre = random.randint(1, 100)
     print(nombre)
