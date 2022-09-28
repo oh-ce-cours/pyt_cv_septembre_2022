@@ -3,10 +3,10 @@ import requests
 
 
 def csv_generator_1(data: typing.List[typing.Tuple[str, str]]):
-    with open("api1.csv", "w", encoding="utf8"):
+    with open("api1.csv", "w", encoding="utf8") as csv_file:
         # print(data)
         for line in data:
-            print(line)
+            csvfile.write(",".join(line) + "\n")
 
 
 datas: typing.List[typing.Tuple[str, str]] = []
