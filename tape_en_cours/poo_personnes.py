@@ -20,9 +20,7 @@ class Personne:
 
 personne1 = Personne(1990, "Matthieu")
 
-print(
-    f"Nom {personne1.nom}, date de naissance {personne1.annee_naissance}, Majeur ? {personne1.est_majeur()}"
-)
+print(personne1)
 
 Personne.AGE_MAJORITE = 40
 personne1.AGE_MAJORITE = 15  # on a masqué la variable de classe avec un attribut
