@@ -18,6 +18,9 @@ class Personne:
         else:
             return f"Bonjour, je suis {self.nom}, je suis né en {self.annee_naissance} et je suis mineur"
 
+    def __gt__(self, other):
+        pass
+
 
 personne1 = Personne(1990, "Matthieu")
 personne2 = Personne(1995, "Matthieu")
