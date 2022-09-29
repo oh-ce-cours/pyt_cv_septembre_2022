@@ -2,6 +2,8 @@ from datetime import date
 
 
 class Personne:
+    AGE_MAJORITE = 18
+
     def __init__(self, annee_de_naissance, nom):
         self.annee_naissance = annee_de_naissance
         self.nom = nom
@@ -10,7 +12,6 @@ class Personne:
         return date.today().year - self.annee_naissance >= AGE_MAJORITE
 
 
-AGE_MAJORITE = 18
 personne1 = Personne(1990, "Matthieu")
 
 print(
