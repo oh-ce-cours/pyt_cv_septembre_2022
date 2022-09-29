@@ -21,10 +21,7 @@ class Personne:
 personne1 = Personne(1990, "Matthieu")
 personne2 = Personne(1995, "Matthieu")
 
-print(personne1)
-
-for _ in personne1:
-    pass
+print(personne1 > personne2)
 
 Personne.AGE_MAJORITE = 40
 personne1.AGE_MAJORITE = 15  # on a masqué la variable de classe avec un attribut
