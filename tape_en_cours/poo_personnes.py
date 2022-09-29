@@ -32,7 +32,7 @@ personne1 = Personne(1990, "p1")
 personne2 = Personne(1995, "p2")
 
 print("***********")
-print(personne1 == personne1)  # => personne1.__gt__(personne2)
+print(personne1 == personne2)  # => personne1.__gt__(personne2)
 print("***********")
 
 Personne.AGE_MAJORITE = 40
