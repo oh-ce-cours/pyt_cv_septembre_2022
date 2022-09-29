@@ -21,7 +21,6 @@ class Personne:
 personne1 = Personne(1990, "Matthieu")
 
 print(personne1)
-personne1[101]
 
 for _ in personne1:
     pass
