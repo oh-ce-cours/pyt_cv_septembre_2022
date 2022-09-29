@@ -20,10 +20,7 @@ class Personne:
     def __gt__(self, other: Personne):
         if not isinstance(other, Personne):
             raise TypeError("can only compare 2 Personnes")
-        if random.random():
             return self.annee_naissance < other.annee_naissance
-        else:
-            return 2
 
     def __ge__(self, other):
         if not isinstance(other, Personne):
