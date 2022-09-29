@@ -9,7 +9,7 @@ class Personne:
         self.nom = nom
 
     def est_majeur(self):
-        return date.today().year - self.annee_naissance >= self.AGE_MAJORITE
+        return date.today().year - self.annee_naissance >= Personne.AGE_MAJORITE
 
 
 personne1 = Personne(1990, "Matthieu")
