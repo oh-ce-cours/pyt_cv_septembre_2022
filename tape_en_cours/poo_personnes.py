@@ -11,8 +11,7 @@ class Personne:
 
 
 AGE_MAJORITE = 18
-int(input("Date de naissance ? : "))
-personne1 = Personne(datenaiss, "Matthieu")
+personne1 = Personne(1990, "Matthieu")
 
 print(
     f"Nom {personne1.nom}, date de naissance {personne1.annee_naissance}, Majeur ? {personne1.est_majeur()}"
