@@ -18,7 +18,7 @@ print(
     f"Nom {personne1.nom}, date de naissance {personne1.annee_naissance}, Majeur ? {personne1.est_majeur()}"
 )
 
-AGE_MAJORITE = 40
+Personne.AGE_MAJORITE = 40
 print(
     f"Nom {personne1.nom}, date de naissance {personne1.annee_naissance}, Majeur ? {personne1.est_majeur()}"
 )
