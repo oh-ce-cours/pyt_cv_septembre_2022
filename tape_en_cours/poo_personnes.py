@@ -17,6 +17,9 @@ class Personne:
         else:
             return f"Bonjour, je suis {self.nom}, je suis né en {self.annee_naissance} et je suis mineur"
 
+    def __iter__(self):
+        pass
+
 
 personne1 = Personne(1990, "Matthieu")
 
