@@ -39,6 +39,14 @@ class Personne:
         return self.annee_naissance <= other.annee_naissance
 
 
+class Eleve(Personne):
+    pass
+
+
+class Formateur(Personne):
+    pass
+
+
 personne1 = Personne(1990, "p1")
 personne2 = Personne(1995, "p2")
 
