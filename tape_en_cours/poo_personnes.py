@@ -18,7 +18,8 @@ class Personne:
             return f"Bonjour, je suis {self.nom}, je suis né en {self.annee_naissance} et je suis mineur"
 
     def __gt__(self, other):
-        pass
+        print(self)
+        print(other)
 
 
 personne1 = Personne(1990, "Matthieu")
