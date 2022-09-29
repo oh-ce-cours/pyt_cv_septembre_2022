@@ -18,15 +18,15 @@ class Personne:
             return f"Bonjour, je suis {self.nom}, je suis né en {self.annee_naissance} et je suis mineur"
 
     def __gt__(self, other):
-        print(self)
-        print(other)
+        print(self.annee_naissance)
+        print(other.annee_naissance)
 
 
 personne1 = Personne(1990, "p1")
 personne2 = Personne(1995, "p2")
 
 print("***********")
-print(personne1 > personne2)
+print(personne1 > personne2)  # => personne1.__gt__(personne2)
 print("***********")
 
 Personne.AGE_MAJORITE = 40
