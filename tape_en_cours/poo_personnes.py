@@ -17,7 +17,7 @@ class Personne:
         else:
             return f"Bonjour, je suis {self.nom}, je suis né en {self.annee_naissance} et je suis mineur"
 
-    def __gt__(self, other):
+    def __gt__(self, other: Personne):
         if not isinstance(other, Personne):
             raise TypeError("can only compare 2 Personnes")
         if random.random():
