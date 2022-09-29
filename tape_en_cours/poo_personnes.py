@@ -8,8 +8,8 @@ class Personne:
         self.annee_naissance = annee_de_naissance
         self.nom = nom
 
-    def est_majeur(self):
-        return date.today().year - self.annee_naissance >= self.AGE_MAJORITE
+    def est_majeur(ezrty):
+        return date.today().year - ezrty.annee_naissance >= ezrty.AGE_MAJORITE
 
     def __str__(self):
         print(isinstance(self, type(self)))
