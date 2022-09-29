@@ -12,6 +12,7 @@ class Personne:
         return date.today().year - self.annee_naissance >= self.AGE_MAJORITE
 
     def __str__(self):
+        print(type(self))
         if self.est_majeur():
             return f"Bonjour, je suis {self.nom}, je suis né en {self.annee_naissance} et je suis majeur"
         else:
