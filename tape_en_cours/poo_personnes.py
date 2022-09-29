@@ -22,10 +22,10 @@ class Personne:
             raise TypeError("can only compare 2 Personnes")
         return self.annee_naissance < other.annee_naissance
 
-    def __eq__(self, other):
+    def __ge__(self, other):
         if not isinstance(other, Personne):
             raise TypeError("can only compare 2 Personnes")
-        return self.annee_naissance == other.annee_naissance
+        return self.annee_naissance <= other.annee_naissance
 
 
 personne1 = Personne(1990, "p1")
