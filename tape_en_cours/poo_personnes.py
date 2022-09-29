@@ -22,8 +22,8 @@ class Personne:
         print(other)
 
 
-personne1 = Personne(1990, "Matthieu")
-personne2 = Personne(1995, "Matthieu")
+personne1 = Personne(1990, "p1")
+personne2 = Personne(1995, "p2")
 
 print("***********")
 print(personne1 > personne2)
