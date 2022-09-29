@@ -28,14 +28,10 @@ class Personne:
             )
 
     def __gt_personne__(self, other):
-        if not isinstance(other, Personne):
-            raise TypeError("can only compare 2 Personnes")
-            return self.annee_naissance < other.annee_naissance
+        return self.annee_naissance < other.annee_naissance
 
     def __gt_int__(self, other: int):
-        if not isinstance(other, int):
-            raise TypeError("can only compare 2 Personnes")
-            return self.annee_naissance < other
+        return self.annee_naissance < other
 
     def __ge__(self, other):
         if not isinstance(other, Personne):
