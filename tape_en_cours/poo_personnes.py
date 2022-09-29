@@ -22,6 +22,11 @@ class Personne:
             raise TypeError("can only compare 2 Personnes")
             return self.annee_naissance < other.annee_naissance
 
+    def __gt__(self, other: int):
+        if not isinstance(other, Personne):
+            raise TypeError("can only compare 2 Personnes")
+            return self.annee_naissance < oher
+
     def __ge__(self, other):
         if not isinstance(other, Personne):
             raise TypeError("can only compare 2 Personnes")
