@@ -1,1 +1,8 @@
-{"nom": "Python objet", "stagiaires": ["Joel", "Blanche"], "formateur": "Matthieu"}
+{
+ "nom": "Python objet",
+ "stagiaires": [
+  "Joel",
+  "Blanche"
+ ],
+ "formateur": "Matthieu"
+}
