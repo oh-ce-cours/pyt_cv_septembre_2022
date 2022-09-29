@@ -17,6 +17,9 @@ class Personne:
         else:
             return f"Bonjour, je suis {self.nom}, je suis né en {self.annee_naissance} et je suis mineur"
 
+    def __getitem__(self, i):
+        print("on essaie d'accéder à mon élément", i)
+
 
 personne1 = Personne(1990, "Matthieu")
 
