@@ -47,6 +47,9 @@ class Formateur(Personne):
     pass
 
 
+eleve1 = Eleve(1990, "Matthieu")
+
+
 class Formation:
     def __init__(self, eleves, formateur):
         self.eleves = eleves
