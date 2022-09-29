@@ -17,13 +17,23 @@ class Personne:
         else:
             return f"Bonjour, je suis {self.nom}, je suis né en {self.annee_naissance} et je suis mineur"
 
-    def __gt_personne__(self, other: Personne):
+    def __gt__(self, other):
+        if isinstance(other, Personne):
+            return self.__gt_personne__(other)
+        elif isinstance(other, int):
+            return self.__gt_int__(other)
+        else:
+            raise TypeError(
+                f"comparaison not suported between person and {type(other)}"
+            )
+
+    def __gt_personne__(self, other):
         if not isinstance(other, Personne):
             raise TypeError("can only compare 2 Personnes")
             return self.annee_naissance < other.annee_naissance
 
     def __gt_int__(self, other: int):
-        if not isinstance(other, Personne):
+        if not isinstance(other, int):
             raise TypeError("can only compare 2 Personnes")
             return self.annee_naissance < other
 
