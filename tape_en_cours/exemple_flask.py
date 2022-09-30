@@ -4,6 +4,6 @@ import requests
 app = Flask(__name__)
 
 
-@app.route("/<name>")
-def hello_world():
-    return requests.get("https://api.github.com/events").json()
+@app.route("/<path>")
+def hello_world(path):
+    return requests.get(f"https://api.github.com/{path}").json()
