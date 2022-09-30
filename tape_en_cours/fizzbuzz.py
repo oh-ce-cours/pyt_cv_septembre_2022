@@ -14,7 +14,6 @@ def solution2():
     for nombre in range(1, 101):
         resultat = ""
         # "fizzbuzz" = "fizz" + "buzz"
-        print(nombre)
         if nombre % 3 == 0:
             resultat = resultat + "fizz"
         if nombre % 5 == 0:
