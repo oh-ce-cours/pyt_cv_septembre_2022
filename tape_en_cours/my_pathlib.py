@@ -24,7 +24,9 @@ class Path:
         return self.append_path(other)
 
     def get_separator(self):
-        """Surchargé dans les classes filles"""
+        """Surchargé dans les classes filles. 
+        https://www.geeksforgeeks.org/abstract-classes-in-python/
+        """
         return ""
 
 
