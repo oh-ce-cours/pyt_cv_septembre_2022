@@ -1,3 +1,3 @@
 import my_pathlib
 
-my_pathlib.WindowsPath()
+print(my_pathlib.WindowsPath("."))
