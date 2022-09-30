@@ -28,7 +28,7 @@ class UnixPath(Path):
         return "/"
 
 
-p = UnixPath(".")
+p = WindowsPath(".")
 intermediaire = p / "toto"
 print(type(intermediaire), intermediaire)  # "./toto"
 q = intermediaire / "tata.txt"
