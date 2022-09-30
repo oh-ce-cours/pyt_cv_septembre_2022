@@ -13,6 +13,9 @@ class Path:
     def __truediv__(self, other: str):
         return self.append_path(other)
 
+    def get_separator(self):
+        return ""
+
 
 class WindowsPath(Path):
     def get_separator(self):
