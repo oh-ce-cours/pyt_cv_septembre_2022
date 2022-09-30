@@ -1,5 +1,6 @@
 class Path:
-    pass
+    def __init__(self, path):
+        self.path = path
 
 
 p = Path(".")
