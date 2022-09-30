@@ -25,7 +25,8 @@ class Path:
 
     def get_separator(self):
         """Surchargé dans les classes filles. 
-        https://www.geeksforgeeks.org/abstract-classes-in-python/
+        Dans ce cas, on pourrait utiliser une classe abstraite comme expliqué ici :
+         https://www.geeksforgeeks.org/abstract-classes-in-python/
         """
         return ""
 
