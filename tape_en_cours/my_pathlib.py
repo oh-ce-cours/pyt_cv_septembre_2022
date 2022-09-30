@@ -48,10 +48,14 @@ class UnixPath(Path):
         return "/"
 
 
-if __name__ == "__main__":
+def main():
     p = WindowsPath(".")
     intermediaire = p / "toto"
     print(type(intermediaire), intermediaire)  # "./toto"
     q = intermediaire / "tata.txt"
     print(q)  # "./toto/tata.txt"
     print("toto")
+
+
+if __name__ == "__main__":
+    main()
