@@ -32,7 +32,7 @@ class Path:
 
 
 class WindowsPath(Path):
-    """Une classe permettant de générer des chemins windows""""
+    """Une classe permettant de générer des chemins windows"""
     def get_separator(self):
         return "\\"
 
