@@ -56,5 +56,5 @@ def solution2():
 #         case _, _:
 #             print(nombre)
 
-
-solution2()
+if __name__ == "__main__":
+    solution2()
