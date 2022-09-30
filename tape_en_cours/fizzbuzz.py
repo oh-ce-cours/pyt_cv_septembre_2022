@@ -21,7 +21,7 @@ def solution2():
         # "fizzbuzz" = "fizz" + "buzz"
         if est_divisible_par(nombre, 3):
             resultat = resultat + "fizz"
-        if nombre % 5 == 0:
+        if est_divisible_par(nombre, 5):
             resultat = resultat + "buzz"
         if not resultat:
             resultat = str(nombre)
