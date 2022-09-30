@@ -18,7 +18,7 @@ def solution2():
             resultat = resultat + "fizz"
         if nombre % 5 == 0:
             resultat = resultat + "buzz"
-        if resultat:
+        if not resultat:
             resultat = str(nombre)
         print(resultat)
 
