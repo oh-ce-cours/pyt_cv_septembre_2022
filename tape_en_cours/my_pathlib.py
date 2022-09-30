@@ -6,9 +6,12 @@ class Path:
     def __str__(self):
         return self.path
 
-    def __truediv__(self, other: str):
+    def append_path(self, other):
         res = self.path + self.separateur + other
         return Path(res)
+
+    def __truediv__(self, other: str):
+        return self.append_path(other)
 
 
 p = Path(".")
