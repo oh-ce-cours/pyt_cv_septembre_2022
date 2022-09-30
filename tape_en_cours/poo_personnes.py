@@ -54,7 +54,7 @@ class Formateur(Personne):
 
 eleve1 = Eleve(1990, "Joel")
 f = Formateur(1990, "Matthieu")
-print("{f.est_ce_que_l_eleve_a_payer(eleve1)=}")
+print(f"{f.est_ce_que_l_eleve_a_payer(eleve1)=}")
 
 
 class Formation:
