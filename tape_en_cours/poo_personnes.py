@@ -47,6 +47,11 @@ class Eleve(Personne):
         self._a_paye = a_paye
 
 
+class Toto:
+    def __init__(self):
+        self._a_paye = True
+
+
 class Formateur(Personne):
     # possède une méthode de plus
     def est_ce_que_l_eleve_a_paye(self, eleve: Eleve) -> bool:
