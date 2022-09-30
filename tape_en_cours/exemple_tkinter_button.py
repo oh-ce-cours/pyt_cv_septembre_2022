@@ -15,7 +15,8 @@ def action_button():
     # dans ce cadre, c'est une fonction de callback ou de rappel
     # on ne sait pas quand elle est appelée, c'est le framework qui le décide
     print("bouton cliqué")
-    showinfo(title="Information", message="Download button clicked!")
+    filenames = fd.askopenfilenames()
+    showinfo(title="Information", message=f"{filenames}")
 
 
 # exit button
