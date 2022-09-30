@@ -77,6 +77,13 @@ class Formation:
         self.eleves = eleves
         self.formateur = formateur
 
+    def eleves_valides(self):
+        res = []
+        for eleve in self.eleves:
+            if self.formateur.eleve_peut_sinsrire(eleve):
+                res.append(eleve)
+        return res
+
 
 formation = Formation(
     [Eleve(2000, "Thomas", False), Eleve(1980, "Marc", True)], formateur
