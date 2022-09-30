@@ -1,7 +1,7 @@
 class Path:
     def __init__(self, path):
         self.path = path
-        self.separateur = "\\"
+        self.separateur = self.get_separator()
 
     def __str__(self):
         return self.path
