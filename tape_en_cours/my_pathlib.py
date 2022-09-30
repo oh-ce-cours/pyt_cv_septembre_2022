@@ -1,7 +1,10 @@
 class Path:
     def __init__(self, path, plateforme):
         self.path = path
-        self.separateur = "/"
+        if plateforme == "windows":
+            self.separateur = "\\"
+        else:
+            self.separateur = "/"
 
     def __str__(self):
         return self.path
