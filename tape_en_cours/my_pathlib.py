@@ -8,8 +8,7 @@ class Path:
 
     def append_path(self, other):
         res = self.path + self.separateur + other
-        self.path = res
-        return self
+        return Path(res)
 
     def __truediv__(self, other: str):
         return self.append_path(other)
