@@ -42,7 +42,7 @@ class Personne:
 class Eleve(Personne):
     # prend un nouvel attribut => a_payer
     def __init__(self, annee_de_naissance, nom, a_paye=False):
-        # super().__init__(annee_de_naissance, nom)
+        super().__init__(annee_de_naissance, nom)
         self._a_paye = a_paye
 
     def set_a_payer(self, valeur):
