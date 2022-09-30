@@ -5,6 +5,9 @@ class Path:
     def __str__(self):
         return self.path
 
+    def __truediv__(self, other):
+
+
 
 p = Path(".")
 intermediaire = p / "toto"
