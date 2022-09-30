@@ -63,6 +63,8 @@ f = Formateur(1990, "Matthieu")
 print(f"apres init {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
 f.reception_reglement(eleve1)
 print(f"apres reglement {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
+f.le_cheque_est_refuse(eleve1)
+print(f"apres refus {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
 
 
 class Formation:
