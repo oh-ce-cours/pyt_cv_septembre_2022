@@ -53,3 +53,4 @@ intermediaire = p / "toto"
 print(type(intermediaire), intermediaire)  # "./toto"
 q = intermediaire / "tata.txt"
 print(q)  # "./toto/tata.txt"
+print("toto")
