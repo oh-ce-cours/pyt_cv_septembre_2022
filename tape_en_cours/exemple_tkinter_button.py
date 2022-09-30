@@ -1,14 +1,15 @@
-import Tkinter
-import tkMessageBox
+import tkinter as tk
+from tkinter import ttk
 
-top = Tkinter.Tk()
+# root window
+root = tk.Tk()
+root.geometry("300x200")
+root.resizable(False, False)
+root.title("Button Demo")
 
+# exit button
+exit_button = ttk.Button(root, text="Exit", command=lambda: root.quit())
 
-def helloCallBack():
-    tkMessageBox.showinfo("Hello Python", "Hello World")
+exit_button.pack(ipadx=5, ipady=5, expand=True)
 
-
-B = Tkinter.Button(top, text="Hello", command=helloCallBack)
-
-B.pack()
-top.mainloop()
+root.mainloop()
