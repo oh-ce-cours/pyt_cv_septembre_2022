@@ -29,11 +29,13 @@ class Path:
 
 
 class WindowsPath(Path):
+    """Une classe permettant de générer des chemins windows""""
     def get_separator(self):
         return "\\"
 
 
 class UnixPath(Path):
+    """Une classe permettant de générer des chemins Unix (linux / macOS)"""
     def get_separator(self):
         return "/"
 
