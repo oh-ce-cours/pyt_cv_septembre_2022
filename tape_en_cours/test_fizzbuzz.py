@@ -9,5 +9,5 @@ def test_division():
 def test_regle_fizz_buzz():
     assert regle_fizzbuzz(1) == "1"
     assert regle_fizzbuzz(3) == "fizz"
-    assert regle_fizzbuzz(5) == "fizz"
+    assert regle_fizzbuzz(5) == "buzz"
     assert regle_fizzbuzz(15) == "fizzbuzz"
