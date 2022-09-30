@@ -57,5 +57,11 @@ def main():
     print("toto")
 
 
+import random
+
+if random.random() > 0.5:
+    MyCustomPath = WindowsPath
+
+
 if __name__ == "__main__":
     main()
