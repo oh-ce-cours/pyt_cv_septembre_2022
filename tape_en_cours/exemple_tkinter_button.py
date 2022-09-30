@@ -17,6 +17,8 @@ def action_button():
     print("bouton cliqué")
     filenames = fd.askopenfilenames()
     showinfo(title="Information", message=f"{filenames}")
+    for filename in filenames:
+        print(open(filename).readline())
 
 
 # exit button
