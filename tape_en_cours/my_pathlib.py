@@ -1,5 +1,5 @@
 class Path:
-    def __init__(self, path, plateforme):
+    def __init__(self, path):
         self.path = path
         self.separateur = "\\"
 
@@ -22,7 +22,7 @@ class UnixPath(Path):
     pass
 
 
-p = Path(".")
+p = UnixPath(".")
 intermediaire = p / "toto"
 print(type(intermediaire), intermediaire)  # "./toto"
 q = intermediaire / "tata.txt"
