@@ -48,13 +48,13 @@ class Eleve(Personne):
 
 class Formateur(Personne):
     # possède une méthode de plus
-    def est_ce_que_l_eleve_a_payer(self, eleve: Eleve) -> bool:
+    def est_ce_que_l_eleve_a_paye(self, eleve: Eleve) -> bool:
         return eleve.a_paye
 
 
 eleve1 = Eleve(1990, "Joel", True)
 f = Formateur(1990, "Matthieu")
-print(f"{f.est_ce_que_l_eleve_a_payer(eleve1)=}")
+print(f"{f.est_ce_que_l_eleve_a_paye(eleve1)=}")
 
 
 class Formation:
