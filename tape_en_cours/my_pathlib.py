@@ -3,7 +3,7 @@ class Path:
 
 
 p = Path(".")
-q = p / "toto" / "tata.txt"
-print(p)  # "./toto/tata.txt"
+# q = p / "toto" / "tata.txt"
+# print(p)  # "./toto/tata.txt"
 
 # | ".\toto\tata.txt"
