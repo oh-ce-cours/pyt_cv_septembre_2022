@@ -45,3 +45,6 @@ def solution2():
 #             print(f"buzz")
 #         case _, _:
 #             print(nombre)
+
+
+solution2()
