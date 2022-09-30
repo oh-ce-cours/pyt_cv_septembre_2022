@@ -64,7 +64,7 @@ class Formateur(Personne):
         eleve._a_paye = False
 
     def eleve_peut_sinsrire(self, eleve: Eleve) -> bool:
-        return self.est_ce_que_l_eleve_a_paye(eleve) and eleve.est_majeur()
+        return self.est_ce_que_l_eleve_a_paye(2) and eleve.est_majeur()
 
 
 eleve1 = Eleve(1990, "Joel", False)
