@@ -1,5 +1,6 @@
 class Path:
     def __init__(self, path):
+        """Un constructeur qui prend le chemin de base"""
         self.path = path
         self.separateur = self.get_separator()
 
