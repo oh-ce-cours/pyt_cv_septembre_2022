@@ -13,3 +13,7 @@ def entre_un_nombre():
     # pas facile à tester
     # pour la meme entrée, plein de résultats possibles
     return input()
+
+
+# ce qui est facile à tester, ce sont des fonctions "pures"
+# pour une entrée donnée, on a toujours le même résultat
