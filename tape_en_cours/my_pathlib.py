@@ -49,10 +49,10 @@ class UnixPath(Path):
 
 
 print("dans my_pathlib", __name__)
-# if ce_fichier_est_execute_directement:
-# p = WindowsPath(".")
-# intermediaire = p / "toto"
-# print(type(intermediaire), intermediaire)  # "./toto"
-# q = intermediaire / "tata.txt"
-# print(q)  # "./toto/tata.txt"
-# print("toto")
+if __name__ == "__main__":
+    p = WindowsPath(".")
+    intermediaire = p / "toto"
+    print(type(intermediaire), intermediaire)  # "./toto"
+    q = intermediaire / "tata.txt"
+    print(q)  # "./toto/tata.txt"
+    print("toto")
