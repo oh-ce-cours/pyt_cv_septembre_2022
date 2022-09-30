@@ -64,12 +64,12 @@ class Formation:
 personne1 = Personne(1990, "p1")
 personne2 = Personne(1995, "p2")
 
-print("***********")
-print(personne1 <= personne2)  # => personne1.__gt__(personne2)
-print("***********")
+# print("***********")
+# print(personne1 <= personne2)  # => personne1.__gt__(personne2)
+# print("***********")
 
-Personne.AGE_MAJORITE = 40
-personne1.AGE_MAJORITE = 15  # on a masqué la variable de classe avec un attribut
-print(
-    f"Nom {personne1.nom}, date de naissance {personne1.annee_naissance}, Majeur ? {personne1.est_majeur()}"
-)
+# Personne.AGE_MAJORITE = 40
+# personne1.AGE_MAJORITE = 15  # on a masqué la variable de classe avec un attribut
+# print(
+#     f"Nom {personne1.nom}, date de naissance {personne1.annee_naissance}, Majeur ? {personne1.est_majeur()}"
+# )
