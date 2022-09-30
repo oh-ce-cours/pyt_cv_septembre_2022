@@ -9,12 +9,17 @@
 #     else:
 #         print(nombre)
 
+
+def est_divisible_par(nombre, diviseur):
+    return nombre % diviseur == 0
+
+
 ## Solution 2 (sans les elif)
 def solution2():
     for nombre in range(1, 101):
         resultat = ""
         # "fizzbuzz" = "fizz" + "buzz"
-        if nombre % 3 == 0:
+        if est_divisible_par(nombre, 3):
             resultat = resultat + "fizz"
         if nombre % 5 == 0:
             resultat = resultat + "buzz"
