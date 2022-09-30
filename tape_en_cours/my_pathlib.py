@@ -9,7 +9,8 @@ class Path:
         return self.path
 
     def append_path(self, other):
-        """La méthode coeur de l'objet qui rajoute le chemin passé 
+        """
+        La méthode coeur de l'objet qui rajoute le chemin passé
         en argument au chemin courant et crée un nouvel objet.
         """
         res = self.path + self.separateur + other
