@@ -111,5 +111,5 @@ personne2 = Personne(1995, "p2")
 
 
 s = "toto\ntata"
-print(repr(s))
-print(str(s))
+print(repr(s))  # print(f"{s=}")
+print(str(s))  # print(f"{s}")
