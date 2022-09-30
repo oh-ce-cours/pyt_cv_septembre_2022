@@ -48,7 +48,6 @@ class UnixPath(Path):
         return "/"
 
 
-print("dans my_pathlib", __name__)
 if __name__ == "__main__":
     p = WindowsPath(".")
     intermediaire = p / "toto"
