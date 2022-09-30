@@ -11,7 +11,7 @@
 
 
 def est_divisible_par(nombre: int, diviseur: int) -> bool:
-    return nombre % diviseur == 0
+    return nombre // diviseur == nombre / diviseur
 
 
 def regle_fizzbuzz(nombre):
