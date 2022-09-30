@@ -86,7 +86,7 @@ class Formation:
 
 
 formation = Formation(
-    [Eleve(2000, "Thomas", False), Eleve(1980, "Marc", True)], formateur
+    [Eleve(2000, "Thomas", True), Eleve(1980, "Marc", True)], formateur
 )
 for eleve in formation.eleves_valides():
     print(eleve)
