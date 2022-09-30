@@ -42,7 +42,7 @@ class Personne:
 class Eleve(Personne):
     # prend un nouvel attribut => a_payer
     def __init__(self, annee_de_naissance, nom, a_paye=False):
-        super().__init__(annee_de_naissance, nom)
+        # super().__init__(annee_de_naissance, nom)
         self._a_paye = a_paye
 
     def set_a_payer(self, valeur):
@@ -62,6 +62,7 @@ class Formateur(Personne):
 
 
 eleve1 = Eleve(1990, "Joel", False)
+print(eleve1.annee_naissance)
 f = Formateur(1990, "Matthieu")
 print(f"apres init {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
 f.reception_reglement(eleve1)
