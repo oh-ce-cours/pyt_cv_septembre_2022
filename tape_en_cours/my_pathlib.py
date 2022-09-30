@@ -20,11 +20,11 @@ class Path:
         return CorrectPath(res)
 
     def __truediv__(self, other: str):
-        """On supporte la division '/' et on retourne un nouvel objet du meme type que l'objet courant""""
+        """On supporte la division '/' et on retourne un nouvel objet du meme type que l'objet courant"""
         return self.append_path(other)
 
     def get_separator(self):
-        """Surchargé dans les classes filles. 
+        """Surchargé dans les classes filles.
         Dans ce cas, on pourrait utiliser une classe abstraite comme expliqué ici :
          https://www.geeksforgeeks.org/abstract-classes-in-python/
         """
@@ -33,12 +33,14 @@ class Path:
 
 class WindowsPath(Path):
     """Une classe permettant de générer des chemins windows"""
+
     def get_separator(self):
         return "\\"
 
 
 class UnixPath(Path):
     """Une classe permettant de générer des chemins Unix (linux / macOS)"""
+
     def get_separator(self):
         return "/"
 
