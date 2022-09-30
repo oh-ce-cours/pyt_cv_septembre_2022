@@ -110,6 +110,6 @@ personne2 = Personne(1995, "p2")
 # )
 
 
-s = "\\"
+s = "toto\ntata"
 print(repr(s))
 print(str(s))
