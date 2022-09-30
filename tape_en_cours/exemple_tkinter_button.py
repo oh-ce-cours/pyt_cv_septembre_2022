@@ -9,11 +9,12 @@ root.title("Button Demo")
 
 
 def action_button():
+    # action a effectuer quand on a cliqué sur le bouton
     print("bouton cliqué")
 
 
 # exit button
-exit_button = ttk.Button(root, text="Cliquez moi !", command=action_button())
+exit_button = ttk.Button(root, text="Cliquez moi !", command=action_button)
 exit_button.pack(ipadx=5, ipady=5, expand=True)
 
 root.mainloop()
