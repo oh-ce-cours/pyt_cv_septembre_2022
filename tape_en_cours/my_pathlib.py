@@ -7,7 +7,7 @@ class Path:
         return self.path
 
     def __truediv__(self, other: str):
-        res = self.path + separateur + other
+        res = self.path + self.separateur + other
 
 
 p = Path(".")
