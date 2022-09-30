@@ -40,11 +40,11 @@ class Personne:
 
 
 class Eleve(Personne):
-    pass
-
+    # prend un nouvel attribut => a_payer 
+    pass 
 
 class Formateur(Personne):
-    pass
+    # possède une méthode de plus 
 
 
 eleve1 = Eleve(1990, "Matthieu")
