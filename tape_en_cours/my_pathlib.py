@@ -48,7 +48,7 @@ class UnixPath(Path):
         return "/"
 
 
-print(__name__)
+print("dans my_pathlib", __name__)
 # if ce_fichier_est_execute_directement:
 p = WindowsPath(".")
 intermediaire = p / "toto"
