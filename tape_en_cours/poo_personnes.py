@@ -88,7 +88,8 @@ class Formation:
 formation = Formation(
     [Eleve(2000, "Thomas", False), Eleve(1980, "Marc", True)], formateur
 )
-print(formation.eleves_valides())
+for eleve in formation.eleves_valides():
+    print(eleve)
 
 personne1 = Personne(1990, "p1")
 personne2 = Personne(1995, "p2")
