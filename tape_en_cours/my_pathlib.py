@@ -15,11 +15,13 @@ class Path:
 
 
 class WindowsPath(Path):
-    pass
+    def get_separator(self):
+        return "\\"
 
 
 class UnixPath(Path):
-    pass
+    def get_separator(self):
+        return "/"
 
 
 p = UnixPath(".")
