@@ -43,6 +43,7 @@ class Eleve(Personne):
     # prend un nouvel attribut => a_payer
     def __init__(self, annee_de_naissance, nom, a_payer=False):
         super().__init__(annee_de_naissance, nom)
+        self.a_paye = a_payer
 
 
 class Formateur(Personne):
