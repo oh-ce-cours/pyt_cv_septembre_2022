@@ -14,7 +14,7 @@ class Path:
 p = Path(".")
 intermediaire = p / "toto"
 print(type(intermediaire), intermediaire)  # "./toto"
-# q = intermediaire / "tata.txt"
+q = intermediaire / "tata.txt"
 # print(p)  # "./toto/tata.txt"
 
 # | ".\toto\tata.txt"
