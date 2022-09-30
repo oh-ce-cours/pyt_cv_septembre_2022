@@ -1,5 +1,5 @@
 class Path:
-    def __init__(self, path):
+    def __init__(self, path, plateforme):
         self.path = path
         self.separateur = "/"
 
@@ -14,7 +14,7 @@ class Path:
         return self.append_path(other)
 
 
-p = Path(".")
+p = Path(".", "windows")
 intermediaire = p / "toto"
 print(type(intermediaire), intermediaire)  # "./toto"
 q = intermediaire / "tata.txt"
