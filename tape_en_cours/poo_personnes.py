@@ -108,3 +108,6 @@ personne2 = Personne(1995, "p2")
 # print(
 #     f"Nom {personne1.nom}, date de naissance {personne1.annee_naissance}, Majeur ? {personne1.est_majeur()}"
 # )
+
+
+s = "\"
