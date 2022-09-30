@@ -58,6 +58,9 @@ class Formateur(Personne):
     def le_cheque_est_refuse(self, eleve: Eleve):
         eleve._a_paye = False
 
+    def eleve_peut_sinsrire(self, eleve: Eleve) -> bool:
+        return self.est_ce_que_l_eleve_a_paye() and eleve.est_majeur()
+
 
 eleve1 = Eleve(1990, "Joel", False)
 print(eleve1.annee_naissance)
