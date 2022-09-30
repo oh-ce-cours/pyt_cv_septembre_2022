@@ -23,6 +23,7 @@ def regle_fizzbuzz(nombre):
         resultat = resultat + "buzz"
     if not resultat:
         resultat = str(nombre)
+    return resultat
 
 
 ## Solution 2 (sans les elif)
