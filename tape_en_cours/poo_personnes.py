@@ -54,6 +54,9 @@ class Formateur(Personne):
     def reception_reglement(self, eleve: Eleve):
         eleve.a_paye = True
 
+    def le_cheque_est_refuse(self, eleve: Eleve):
+        eleve.a_paye = False
+
 
 eleve1 = Eleve(1990, "Joel", True)
 f = Formateur(1990, "Matthieu")
