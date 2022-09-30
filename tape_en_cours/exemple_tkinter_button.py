@@ -14,7 +14,6 @@ def action_button():
 
 # exit button
 exit_button = ttk.Button(root, text="Cliquez moi !", command=action_button())
-
 exit_button.pack(ipadx=5, ipady=5, expand=True)
 
 root.mainloop()
