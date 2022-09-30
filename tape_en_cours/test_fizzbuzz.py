@@ -3,4 +3,4 @@ from fizzbuzz import est_divisible_par, regle_fizzbuzz
 
 def test_division():
     assert est_divisible_par(3, 2) == False
-    assert est_divisible_par(5, 10) == True
+    assert est_divisible_par(10, 5) == True
