@@ -75,7 +75,7 @@ class Formation:
         self.formateur = formateur
 
 
-f = Formation([Eleve(2000, "Thomas", False), Eleve(1980, "Marc", True)], f)
+formation = Formation([Eleve(2000, "Thomas", False), Eleve(1980, "Marc", True)], f)
 
 
 personne1 = Personne(1990, "p1")
