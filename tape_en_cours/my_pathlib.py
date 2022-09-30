@@ -1,6 +1,7 @@
 class Path:
     def __init__(self, path, plateforme):
         self.path = path
+        self.plateforme = plateforme
         if plateforme == "windows":
             self.separateur = "\\"
         else:
