@@ -5,6 +5,7 @@ class Path:
         self.separateur = self.get_separator()
 
     def __str__(self):
+        """La méthode pour afficher notre objet (nous n'affichons que le path)"""
         return self.path
 
     def append_path(self, other):
