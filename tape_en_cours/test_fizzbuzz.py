@@ -1,3 +1,6 @@
+# on peut configurer VSCode à charger des tests unitaires
+# https://code.visualstudio.com/docs/python/testing
+
 from fizzbuzz import est_divisible_par, regle_fizzbuzz
 
 
