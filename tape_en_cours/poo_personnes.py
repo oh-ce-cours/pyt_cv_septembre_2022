@@ -78,7 +78,7 @@ print(f"apres refus {formateur.est_ce_que_l_eleve_a_paye(eleve1)=}")
 
 
 class Formation:
-    def __init__(self, eleves: typing.List[Eleve], formateur: Formateur):
+    def __init__(self, eleves: typing.Iterable[Eleve], formateur: Formateur):
         self.eleves = eleves
         self.formateur = formateur
 
