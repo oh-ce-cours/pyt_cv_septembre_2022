@@ -60,7 +60,9 @@ class Formateur(Personne):
 
 eleve1 = Eleve(1990, "Joel", False)
 f = Formateur(1990, "Matthieu")
-print(f"{f.est_ce_que_l_eleve_a_paye(eleve1)=}")
+print(f"apres init {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
+f.reception_reglement(eleve1)
+print(f"apres reglement {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
 
 
 class Formation:
