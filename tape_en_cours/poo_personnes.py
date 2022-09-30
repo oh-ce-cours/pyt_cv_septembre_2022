@@ -43,22 +43,22 @@ class Eleve(Personne):
     # prend un nouvel attribut => a_payer
     def __init__(self, annee_de_naissance, nom, a_paye=False):
         super().__init__(annee_de_naissance, nom)
-        self.a_paye = a_paye
+        self._a_paye = a_paye
 
     def set_a_payer(self, valeur):
-        self.a_paye = valeur
+        self._a_paye = valeur
 
 
 class Formateur(Personne):
     # possède une méthode de plus
     def est_ce_que_l_eleve_a_paye(self, eleve: Eleve) -> bool:
-        return eleve.a_paye
+        return eleve._a_paye
 
     def reception_reglement(self, eleve: Eleve):
-        eleve.a_paye = True
+        eleve._a_paye = 10
 
     def le_cheque_est_refuse(self, eleve: Eleve):
-        eleve.a_paye = False
+        eleve._a_paye = False
 
 
 eleve1 = Eleve(1990, "Joel", False)
