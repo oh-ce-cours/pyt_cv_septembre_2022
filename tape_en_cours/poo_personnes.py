@@ -51,6 +51,9 @@ class Formateur(Personne):
     def est_ce_que_l_eleve_a_paye(self, eleve: Eleve) -> bool:
         return eleve.a_paye
 
+    def reception_reglement(self, eleve: Eleve):
+        eleve.a_paye = True
+
 
 eleve1 = Eleve(1990, "Joel", True)
 f = Formateur(1990, "Matthieu")
