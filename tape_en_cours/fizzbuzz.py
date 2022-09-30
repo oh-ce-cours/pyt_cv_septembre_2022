@@ -29,6 +29,7 @@ def regle_fizzbuzz(nombre):
 ## Solution 2 (sans les elif)
 def solution2():
     for nombre in range(1, 101):
+        resultat = regle_fizzbuzz(nombre)
         print(resultat)
 
 
