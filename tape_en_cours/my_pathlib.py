@@ -8,7 +8,7 @@ class Path:
 
     def __truediv__(self, other: str):
         res = self.path + self.separateur + other
-        return res
+        return Path(res)
 
 
 p = Path(".")
