@@ -3,6 +3,7 @@ import requests
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello_world():
     return requests.get("https://api.github.com/events").json()
