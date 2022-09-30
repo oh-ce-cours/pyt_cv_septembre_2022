@@ -61,12 +61,12 @@ class Formateur(Personne):
 
 eleve1 = Eleve(1990, "Joel", False)
 print(eleve1.annee_naissance)
-f = Formateur(1990, "Matthieu")
-print(f"apres init {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
-f.reception_reglement(eleve1)
-print(f"apres reglement {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
-f.le_cheque_est_refuse(eleve1)
-print(f"apres refus {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
+formateur = Formateur(1990, "Matthieu")
+print(f"apres init {formateur.est_ce_que_l_eleve_a_paye(eleve1)=}")
+formateur.reception_reglement(eleve1)
+print(f"apres reglement {formateur.est_ce_que_l_eleve_a_paye(eleve1)=}")
+formateur.le_cheque_est_refuse(eleve1)
+print(f"apres refus {formateur.est_ce_que_l_eleve_a_paye(eleve1)=}")
 
 
 class Formation:
@@ -75,7 +75,9 @@ class Formation:
         self.formateur = formateur
 
 
-formation = Formation([Eleve(2000, "Thomas", False), Eleve(1980, "Marc", True)], f)
+formation = Formation(
+    [Eleve(2000, "Thomas", False), Eleve(1980, "Marc", True)], formateur
+)
 
 
 personne1 = Personne(1990, "p1")
