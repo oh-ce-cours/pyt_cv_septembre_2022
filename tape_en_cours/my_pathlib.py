@@ -18,6 +18,14 @@ class Path:
         return self.append_path(other)
 
 
+class WindowsPath(Path):
+    pass
+
+
+class UnixPath(Path):
+    pass
+
+
 p = Path(".", "windows")
 intermediaire = p / "toto"
 print(type(intermediaire), intermediaire)  # "./toto"
