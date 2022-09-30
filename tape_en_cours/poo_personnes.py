@@ -1,4 +1,5 @@
 from datetime import date
+from telnetlib import EL
 
 
 class Personne:
@@ -69,7 +70,7 @@ print(f"apres refus {f.est_ce_que_l_eleve_a_paye(eleve1)=}")
 
 
 class Formation:
-    def __init__(self, eleves, formateur):
+    def __init__(self, eleves: typing.List[Eleve], formateur):
         self.eleves = eleves
         self.formateur = formateur
 
