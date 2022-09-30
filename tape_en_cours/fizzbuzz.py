@@ -14,17 +14,20 @@ def est_divisible_par(nombre, diviseur):
     return nombre % diviseur == 0
 
 
+def regle_fizzbuzz(nombre):
+    resultat = ""
+    # "fizzbuzz" = "fizz" + "buzz"
+    if est_divisible_par(nombre, 3):
+        resultat = resultat + "fizz"
+    if est_divisible_par(nombre, 5):
+        resultat = resultat + "buzz"
+    if not resultat:
+        resultat = str(nombre)
+
+
 ## Solution 2 (sans les elif)
 def solution2():
     for nombre in range(1, 101):
-        resultat = ""
-        # "fizzbuzz" = "fizz" + "buzz"
-        if est_divisible_par(nombre, 3):
-            resultat = resultat + "fizz"
-        if est_divisible_par(nombre, 5):
-            resultat = resultat + "buzz"
-        if not resultat:
-            resultat = str(nombre)
         print(resultat)
 
 
