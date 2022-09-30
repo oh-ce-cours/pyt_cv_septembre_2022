@@ -1,4 +1,4 @@
-import my_pathlib
+from my_pathlib import WindowsPath
 
 print("dans exemple_import", __name__)
 
