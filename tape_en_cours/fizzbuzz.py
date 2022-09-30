@@ -10,7 +10,7 @@
 #         print(nombre)
 
 
-def est_divisible_par(nombre, diviseur):
+def est_divisible_par(nombre: int, diviseur: int) -> bool:
     return nombre % diviseur == 0
 
 
