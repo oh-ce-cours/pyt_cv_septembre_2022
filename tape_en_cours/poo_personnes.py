@@ -45,6 +45,9 @@ class Eleve(Personne):
         super().__init__(annee_de_naissance, nom)
         self.a_paye = a_paye
 
+    def set_a_payer(self, valeur):
+        self.a_paye = valeur
+
 
 class Formateur(Personne):
     # possède une méthode de plus
