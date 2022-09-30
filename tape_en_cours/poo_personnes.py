@@ -58,7 +58,7 @@ class Formateur(Personne):
         eleve.a_paye = False
 
 
-eleve1 = Eleve(1990, "Joel", True)
+eleve1 = Eleve(1990, "Joel", False)
 f = Formateur(1990, "Matthieu")
 print(f"{f.est_ce_que_l_eleve_a_paye(eleve1)=}")
 
