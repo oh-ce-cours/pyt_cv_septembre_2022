@@ -52,7 +52,7 @@ class Formateur(Personne):
         return eleve._a_paye
 
     def reception_reglement(self, eleve: Eleve):
-        eleve._a_paye = 10
+        eleve._a_paye = True
 
     def le_cheque_est_refuse(self, eleve: Eleve):
         eleve._a_paye = False
