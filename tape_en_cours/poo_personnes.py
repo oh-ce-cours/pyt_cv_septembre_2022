@@ -111,4 +111,4 @@ personne2 = Personne(1995, "p2")
 
 
 s = "\\"
-print(s)
+print(repr(s))
