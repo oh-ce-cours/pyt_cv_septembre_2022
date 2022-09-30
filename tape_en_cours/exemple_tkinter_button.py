@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter.messagebox import showinfo
 from tkinter import filedialog as fd
-
+import time
 # root window
 root = tk.Tk()
 root.geometry("300x200")
@@ -15,6 +15,7 @@ def action_button():
     # dans ce cadre, c'est une fonction de callback ou de rappel
     # on ne sait pas quand elle est appelée, c'est le framework qui le décide
     print("bouton cliqué")
+    time.sleep(20)
     filenames = fd.askopenfilenames()
     showinfo(title="Information", message=f"{filenames}")
     for filename in filenames:
