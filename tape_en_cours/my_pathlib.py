@@ -56,7 +56,6 @@ def main():
     print(q)  # "./toto/tata.txt"
     print("toto")
 
-    # if __name__ == "__main__":
 
-
-main()
+if __name__ == "__main__":
+    main()
