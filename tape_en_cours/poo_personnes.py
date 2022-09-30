@@ -52,7 +52,9 @@ class Formateur(Personne):
         return eleve.a_paye
 
 
-eleve1 = Eleve(1990, "Matthieu")
+eleve1 = Eleve(1990, "Joel")
+f = Formateur(1990, "Matthieu")
+f.est_ce_que_l_eleve_a_payer(eleve1)
 
 
 class Formation:
