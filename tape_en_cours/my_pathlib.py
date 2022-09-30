@@ -7,8 +7,8 @@ class Path:
 
 
 p = Path(".")
-intermediaire =(p / "toto")
-q =  / "tata.txt"
+intermediaire = p / "toto"
+q = intermediaire / "tata.txt"
 print(p)  # "./toto/tata.txt"
 
 # | ".\toto\tata.txt"
