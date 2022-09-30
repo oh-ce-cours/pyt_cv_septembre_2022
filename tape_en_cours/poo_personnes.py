@@ -40,11 +40,14 @@ class Personne:
 
 
 class Eleve(Personne):
-    # prend un nouvel attribut => a_payer 
-    pass 
+    # prend un nouvel attribut => a_payer
+    pass
+
 
 class Formateur(Personne):
-    # possède une méthode de plus 
+    # possède une méthode de plus
+    def est_ce_que_l_eleve_a_payer(self, eleve: Eleve) -> bool:
+        return eleve.a_paye
 
 
 eleve1 = Eleve(1990, "Matthieu")
